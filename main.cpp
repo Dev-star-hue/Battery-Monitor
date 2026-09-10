@@ -250,7 +250,7 @@ void submission_page(){
 
 void printIntro(){
 
-  //print bullshit into a monitor
+  //print information into the monitor
   Serial.print("Open http://");
   Serial.print(WiFi.localIP());
   Serial.println("/ in your browser to see it working");
@@ -320,7 +320,7 @@ Serial.print(message);
       Serial.print("HTTP Response code: ");
       Serial.println(httpResponseCode);
 
-      // if connection eatablished then do this
+      // if connection established then do this
 if (httpResponseCode == 200) { 
   Serial.println("Query Done"); 
   Serial.println(httpResponseCode); 
